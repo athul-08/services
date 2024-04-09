@@ -1,0 +1,6 @@
+<br>
+<div *ngIf="task">
+    <input type="text" [(ngModel)]="task.title" placeholder="Title">
+    <textarea [(ngModel)]="task.description" placeholder="Description"></textarea>
+    <button (click)="updateTask()">Update Task</button>
+  </div>
